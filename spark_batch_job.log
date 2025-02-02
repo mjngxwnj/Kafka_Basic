@@ -1,0 +1,436 @@
+Run Spark Batch Job at Wed Jan 29 18:37:01 +07 2025
+:: loading settings :: url = jar:file:/opt/bitnami/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /opt/bitnami/spark/.ivy2/cache
+The jars for the packages stored in: /opt/bitnami/spark/.ivy2/jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-82e88de6-f687-45de-bb45-227e8d9f093a;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.4.3 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.4.3 in central
+	found org.apache.kafka#kafka-clients;3.3.2 in central
+	found org.lz4#lz4-java;1.8.0 in central
+	found org.xerial.snappy#snappy-java;1.1.10.5 in central
+	found org.slf4j#slf4j-api;2.0.6 in central
+	found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+	found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+	found commons-logging#commons-logging;1.1.3 in central
+	found com.google.code.findbugs#jsr305;3.0.0 in central
+	found org.apache.commons#commons-pool2;2.11.1 in central
+:: resolution report :: resolve 1003ms :: artifacts dl 34ms
+	:: modules in use:
+	com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+	commons-logging#commons-logging;1.1.3 from central in [default]
+	org.apache.commons#commons-pool2;2.11.1 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+	org.apache.kafka#kafka-clients;3.3.2 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.4.3 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.4.3 from central in [default]
+	org.lz4#lz4-java;1.8.0 from central in [default]
+	org.slf4j#slf4j-api;2.0.6 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.10.5 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   11  |   0   |   0   |   0   ||   11  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-82e88de6-f687-45de-bb45-227e8d9f093a
+	confs: [default]
+	0 artifacts copied, 11 already retrieved (0kB/26ms)
++--------------------+-------+---+----------+---+-----+-------------+---------+-------------------+
+|              street|bicycle|car|motorcycle|bus|truck|traffic light|stop sign|     execution_time|
++--------------------+-------+---+----------+---+-----+-------------+---------+-------------------+
+|nguyenthaison_pha...|      0|  9|         3|  0|    0|            0|        0|2025-01-29 18:26:42|
+| hoangvanthu_conghoa|      0|  9|         5|  0|    0|            0|        0|2025-01-29 18:26:47|
+|truongchinh_tanki...|      0|  9|        12|  2|    0|            0|        0|2025-01-29 18:26:51|
+|      cmt8_truongson|      0|  5|        11|  0|    0|            0|        0|2025-01-29 18:26:55|
+|nguyenthaison_pha...|      0| 10|        22|  0|    1|            0|        0|2025-01-29 18:26:59|
+| hoangvanthu_conghoa|      0| 14|         6|  0|    1|            0|        0|2025-01-29 18:27:05|
+|truongchinh_tanki...|      0|  8|         6|  0|    0|            0|        0|2025-01-29 18:27:09|
+|      cmt8_truongson|      0|  8|         4|  0|    0|            0|        0|2025-01-29 18:27:12|
+|nguyenthaison_pha...|      0|  6|        20|  0|    0|            0|        0|2025-01-29 18:27:17|
+| hoangvanthu_conghoa|      0| 14|         6|  0|    0|            0|        0|2025-01-29 18:27:21|
+|truongchinh_tanki...|      0|  0|        34|  0|    0|            0|        0|2025-01-29 18:27:25|
+|      cmt8_truongson|      0|  4|         4|  0|    0|            0|        0|2025-01-29 18:27:29|
+|nguyenthaison_pha...|      0|  8|        19|  0|    1|            0|        0|2025-01-29 18:27:33|
+| hoangvanthu_conghoa|      0|  8|        11|  0|    0|            0|        0|2025-01-29 18:27:37|
+|truongchinh_tanki...|      0|  9|        22|  0|    0|            0|        0|2025-01-29 18:27:42|
+|      cmt8_truongson|      1| 17|         3|  0|    0|            0|        0|2025-01-29 18:27:46|
+|nguyenthaison_pha...|      0|  3|        10|  0|    1|            0|        0|2025-01-29 18:27:52|
+| hoangvanthu_conghoa|      0|  8|         3|  0|    0|            0|        0|2025-01-29 18:27:56|
+|truongchinh_tanki...|      0| 13|        11|  1|    1|            0|        0|2025-01-29 18:28:01|
+|      cmt8_truongson|      0| 10|        12|  1|    0|            0|        0|2025-01-29 18:28:05|
++--------------------+-------+---+----------+---+-----+-------------+---------+-------------------+
+only showing top 20 rows
+
+Run Spark Batch Job at Wed Jan 29 18:48:07 +07 2025
+:: loading settings :: url = jar:file:/opt/bitnami/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /opt/bitnami/spark/.ivy2/cache
+The jars for the packages stored in: /opt/bitnami/spark/.ivy2/jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-df941add-429a-45a3-8ee4-5dd5d744f313;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.4.3 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.4.3 in central
+	found org.apache.kafka#kafka-clients;3.3.2 in central
+	found org.lz4#lz4-java;1.8.0 in central
+	found org.xerial.snappy#snappy-java;1.1.10.5 in central
+	found org.slf4j#slf4j-api;2.0.6 in central
+	found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+	found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+	found commons-logging#commons-logging;1.1.3 in central
+	found com.google.code.findbugs#jsr305;3.0.0 in central
+	found org.apache.commons#commons-pool2;2.11.1 in central
+:: resolution report :: resolve 1038ms :: artifacts dl 38ms
+	:: modules in use:
+	com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+	commons-logging#commons-logging;1.1.3 from central in [default]
+	org.apache.commons#commons-pool2;2.11.1 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+	org.apache.kafka#kafka-clients;3.3.2 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.4.3 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.4.3 from central in [default]
+	org.lz4#lz4-java;1.8.0 from central in [default]
+	org.slf4j#slf4j-api;2.0.6 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.10.5 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   11  |   0   |   0   |   0   ||   11  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-df941add-429a-45a3-8ee4-5dd5d744f313
+	confs: [default]
+	0 artifacts copied, 11 already retrieved (0kB/17ms)
++------+-------+---+----------+---+-----+-------------+---------+--------------+
+|street|bicycle|car|motorcycle|bus|truck|traffic light|stop sign|execution_time|
++------+-------+---+----------+---+-----+-------------+---------+--------------+
++------+-------+---+----------+---+-----+-------------+---------+--------------+
+
+Run Spark Batch Job at Wed Jan 29 18:50:25 +07 2025
+:: loading settings :: url = jar:file:/opt/bitnami/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /opt/bitnami/spark/.ivy2/cache
+The jars for the packages stored in: /opt/bitnami/spark/.ivy2/jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-41543642-9ddb-4197-8106-9c87dea89929;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.4.3 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.4.3 in central
+	found org.apache.kafka#kafka-clients;3.3.2 in central
+	found org.lz4#lz4-java;1.8.0 in central
+	found org.xerial.snappy#snappy-java;1.1.10.5 in central
+	found org.slf4j#slf4j-api;2.0.6 in central
+	found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+	found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+	found commons-logging#commons-logging;1.1.3 in central
+	found com.google.code.findbugs#jsr305;3.0.0 in central
+	found org.apache.commons#commons-pool2;2.11.1 in central
+:: resolution report :: resolve 3258ms :: artifacts dl 133ms
+	:: modules in use:
+	com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+	commons-logging#commons-logging;1.1.3 from central in [default]
+	org.apache.commons#commons-pool2;2.11.1 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+	org.apache.kafka#kafka-clients;3.3.2 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.4.3 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.4.3 from central in [default]
+	org.lz4#lz4-java;1.8.0 from central in [default]
+	org.slf4j#slf4j-api;2.0.6 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.10.5 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   11  |   0   |   0   |   0   ||   11  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-41543642-9ddb-4197-8106-9c87dea89929
+	confs: [default]
+	0 artifacts copied, 11 already retrieved (0kB/68ms)
++--------------------+-------+---+----------+---+-----+-------------+---------+-------------------+
+|              street|bicycle|car|motorcycle|bus|truck|traffic light|stop sign|     execution_time|
++--------------------+-------+---+----------+---+-----+-------------+---------+-------------------+
+|nguyenthaison_pha...|      0|  5|         2|  0|    1|            0|        0|2025-01-29 18:50:04|
+| hoangvanthu_conghoa|      0|  5|         4|  0|    0|            0|        0|2025-01-29 18:50:09|
+|truongchinh_tanki...|      1|  4|        11|  0|    0|            1|        0|2025-01-29 18:50:12|
+|      cmt8_truongson|      0|  6|        12|  0|    0|            0|        0|2025-01-29 18:50:16|
+|nguyenthaison_pha...|      0|  2|        12|  0|    0|            0|        0|2025-01-29 18:50:22|
+| hoangvanthu_conghoa|      0|  7|         3|  0|    0|            0|        0|2025-01-29 18:50:25|
+|truongchinh_tanki...|      0| 12|        12|  0|    0|            0|        0|2025-01-29 18:50:29|
+|      cmt8_truongson|      0|  5|         6|  0|    0|            0|        0|2025-01-29 18:50:35|
+|nguyenthaison_pha...|      0|  7|        24|  0|    0|            0|        0|2025-01-29 18:50:41|
+| hoangvanthu_conghoa|      0| 10|         4|  0|    0|            0|        0|2025-01-29 18:50:47|
+|truongchinh_tanki...|      0|  7|        14|  0|    0|            0|        0|2025-01-29 18:50:53|
+|      cmt8_truongson|      0|  3|        16|  0|    0|            0|        0|2025-01-29 18:51:01|
+|nguyenthaison_pha...|      0|  1|        17|  0|    1|            0|        0|2025-01-29 18:51:07|
+| hoangvanthu_conghoa|      0|  7|        10|  0|    0|            0|        0|2025-01-29 18:51:12|
+|truongchinh_tanki...|      0|  4|        18|  0|    1|            0|        0|2025-01-29 18:51:17|
+|      cmt8_truongson|      0|  2|         8|  0|    0|            0|        0|2025-01-29 18:51:22|
++--------------------+-------+---+----------+---+-----+-------------+---------+-------------------+
+
+Run Spark Batch Job at Wed Jan 29 18:53:29 +07 2025
+:: loading settings :: url = jar:file:/opt/bitnami/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /opt/bitnami/spark/.ivy2/cache
+The jars for the packages stored in: /opt/bitnami/spark/.ivy2/jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-50ff1d0b-b085-4375-b12f-e8f154f783a6;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.4.3 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.4.3 in central
+	found org.apache.kafka#kafka-clients;3.3.2 in central
+	found org.lz4#lz4-java;1.8.0 in central
+	found org.xerial.snappy#snappy-java;1.1.10.5 in central
+	found org.slf4j#slf4j-api;2.0.6 in central
+	found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+	found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+	found commons-logging#commons-logging;1.1.3 in central
+	found com.google.code.findbugs#jsr305;3.0.0 in central
+	found org.apache.commons#commons-pool2;2.11.1 in central
+:: resolution report :: resolve 2883ms :: artifacts dl 73ms
+	:: modules in use:
+	com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+	commons-logging#commons-logging;1.1.3 from central in [default]
+	org.apache.commons#commons-pool2;2.11.1 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+	org.apache.kafka#kafka-clients;3.3.2 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.4.3 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.4.3 from central in [default]
+	org.lz4#lz4-java;1.8.0 from central in [default]
+	org.slf4j#slf4j-api;2.0.6 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.10.5 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   11  |   0   |   0   |   0   ||   11  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-50ff1d0b-b085-4375-b12f-e8f154f783a6
+	confs: [default]
+	0 artifacts copied, 11 already retrieved (0kB/46ms)
++--------------------+-------+---+----------+---+-----+-------------+---------+-------------------+
+|              street|bicycle|car|motorcycle|bus|truck|traffic light|stop sign|     execution_time|
++--------------------+-------+---+----------+---+-----+-------------+---------+-------------------+
+|nguyenthaison_pha...|      0|  5|         2|  0|    1|            0|        0|2025-01-29 18:50:04|
+| hoangvanthu_conghoa|      0|  5|         4|  0|    0|            0|        0|2025-01-29 18:50:09|
+|truongchinh_tanki...|      1|  4|        11|  0|    0|            1|        0|2025-01-29 18:50:12|
+|      cmt8_truongson|      0|  6|        12|  0|    0|            0|        0|2025-01-29 18:50:16|
+|nguyenthaison_pha...|      0|  2|        12|  0|    0|            0|        0|2025-01-29 18:50:22|
+| hoangvanthu_conghoa|      0|  7|         3|  0|    0|            0|        0|2025-01-29 18:50:25|
+|truongchinh_tanki...|      0| 12|        12|  0|    0|            0|        0|2025-01-29 18:50:29|
+|      cmt8_truongson|      0|  5|         6|  0|    0|            0|        0|2025-01-29 18:50:35|
+|nguyenthaison_pha...|      0|  7|        24|  0|    0|            0|        0|2025-01-29 18:50:41|
+| hoangvanthu_conghoa|      0| 10|         4|  0|    0|            0|        0|2025-01-29 18:50:47|
+|truongchinh_tanki...|      0|  7|        14|  0|    0|            0|        0|2025-01-29 18:50:53|
+|      cmt8_truongson|      0|  3|        16|  0|    0|            0|        0|2025-01-29 18:51:01|
+|nguyenthaison_pha...|      0|  1|        17|  0|    1|            0|        0|2025-01-29 18:51:07|
+| hoangvanthu_conghoa|      0|  7|        10|  0|    0|            0|        0|2025-01-29 18:51:12|
+|truongchinh_tanki...|      0|  4|        18|  0|    1|            0|        0|2025-01-29 18:51:17|
+|      cmt8_truongson|      0|  2|         8|  0|    0|            0|        0|2025-01-29 18:51:22|
+|nguyenthaison_pha...|      1|  6|        19|  1|    0|            0|        0|2025-01-29 18:51:27|
+| hoangvanthu_conghoa|      0|  4|         6|  0|    1|            0|        0|2025-01-29 18:51:31|
+|truongchinh_tanki...|      0|  1|         5|  0|    0|            2|        0|2025-01-29 18:51:36|
+|      cmt8_truongson|      0|  0|         6|  0|    0|            0|        0|2025-01-29 18:51:40|
++--------------------+-------+---+----------+---+-----+-------------+---------+-------------------+
+only showing top 20 rows
+
+Run Spark Batch Job at Wed Jan 29 18:55:35 +07 2025
+:: loading settings :: url = jar:file:/opt/bitnami/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /opt/bitnami/spark/.ivy2/cache
+The jars for the packages stored in: /opt/bitnami/spark/.ivy2/jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-1ea4f0a1-abf6-4f17-b2e6-0612fbfbcade;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.4.3 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.4.3 in central
+	found org.apache.kafka#kafka-clients;3.3.2 in central
+	found org.lz4#lz4-java;1.8.0 in central
+	found org.xerial.snappy#snappy-java;1.1.10.5 in central
+	found org.slf4j#slf4j-api;2.0.6 in central
+	found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+	found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+	found commons-logging#commons-logging;1.1.3 in central
+	found com.google.code.findbugs#jsr305;3.0.0 in central
+	found org.apache.commons#commons-pool2;2.11.1 in central
+:: resolution report :: resolve 3689ms :: artifacts dl 75ms
+	:: modules in use:
+	com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+	commons-logging#commons-logging;1.1.3 from central in [default]
+	org.apache.commons#commons-pool2;2.11.1 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+	org.apache.kafka#kafka-clients;3.3.2 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.4.3 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.4.3 from central in [default]
+	org.lz4#lz4-java;1.8.0 from central in [default]
+	org.slf4j#slf4j-api;2.0.6 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.10.5 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   11  |   0   |   0   |   0   ||   11  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-1ea4f0a1-abf6-4f17-b2e6-0612fbfbcade
+	confs: [default]
+	0 artifacts copied, 11 already retrieved (0kB/50ms)
++--------------------+-------+---+----------+---+-----+-------------+---------+-------------------+
+|              street|bicycle|car|motorcycle|bus|truck|traffic light|stop sign|     execution_time|
++--------------------+-------+---+----------+---+-----+-------------+---------+-------------------+
+|nguyenthaison_pha...|      0|  5|         2|  0|    1|            0|        0|2025-01-29 18:50:04|
+| hoangvanthu_conghoa|      0|  5|         4|  0|    0|            0|        0|2025-01-29 18:50:09|
+|truongchinh_tanki...|      1|  4|        11|  0|    0|            1|        0|2025-01-29 18:50:12|
+|      cmt8_truongson|      0|  6|        12|  0|    0|            0|        0|2025-01-29 18:50:16|
+|nguyenthaison_pha...|      0|  2|        12|  0|    0|            0|        0|2025-01-29 18:50:22|
+| hoangvanthu_conghoa|      0|  7|         3|  0|    0|            0|        0|2025-01-29 18:50:25|
+|truongchinh_tanki...|      0| 12|        12|  0|    0|            0|        0|2025-01-29 18:50:29|
+|      cmt8_truongson|      0|  5|         6|  0|    0|            0|        0|2025-01-29 18:50:35|
+|nguyenthaison_pha...|      0|  7|        24|  0|    0|            0|        0|2025-01-29 18:50:41|
+| hoangvanthu_conghoa|      0| 10|         4|  0|    0|            0|        0|2025-01-29 18:50:47|
+|truongchinh_tanki...|      0|  7|        14|  0|    0|            0|        0|2025-01-29 18:50:53|
+|      cmt8_truongson|      0|  3|        16|  0|    0|            0|        0|2025-01-29 18:51:01|
+|nguyenthaison_pha...|      0|  1|        17|  0|    1|            0|        0|2025-01-29 18:51:07|
+| hoangvanthu_conghoa|      0|  7|        10|  0|    0|            0|        0|2025-01-29 18:51:12|
+|truongchinh_tanki...|      0|  4|        18|  0|    1|            0|        0|2025-01-29 18:51:17|
+|      cmt8_truongson|      0|  2|         8|  0|    0|            0|        0|2025-01-29 18:51:22|
+|nguyenthaison_pha...|      1|  6|        19|  1|    0|            0|        0|2025-01-29 18:51:27|
+| hoangvanthu_conghoa|      0|  4|         6|  0|    1|            0|        0|2025-01-29 18:51:31|
+|truongchinh_tanki...|      0|  1|         5|  0|    0|            2|        0|2025-01-29 18:51:36|
+|      cmt8_truongson|      0|  0|         6|  0|    0|            0|        0|2025-01-29 18:51:40|
++--------------------+-------+---+----------+---+-----+-------------+---------+-------------------+
+only showing top 20 rows
+
+Run Spark Batch Job at Wed Jan 29 18:57:03 +07 2025
+:: loading settings :: url = jar:file:/opt/bitnami/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /opt/bitnami/spark/.ivy2/cache
+The jars for the packages stored in: /opt/bitnami/spark/.ivy2/jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-27d70178-51ea-4f3b-9c06-5ba77f7333e8;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.4.3 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.4.3 in central
+	found org.apache.kafka#kafka-clients;3.3.2 in central
+	found org.lz4#lz4-java;1.8.0 in central
+	found org.xerial.snappy#snappy-java;1.1.10.5 in central
+	found org.slf4j#slf4j-api;2.0.6 in central
+	found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+	found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+	found commons-logging#commons-logging;1.1.3 in central
+	found com.google.code.findbugs#jsr305;3.0.0 in central
+	found org.apache.commons#commons-pool2;2.11.1 in central
+:: resolution report :: resolve 2890ms :: artifacts dl 166ms
+	:: modules in use:
+	com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+	commons-logging#commons-logging;1.1.3 from central in [default]
+	org.apache.commons#commons-pool2;2.11.1 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+	org.apache.kafka#kafka-clients;3.3.2 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.4.3 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.4.3 from central in [default]
+	org.lz4#lz4-java;1.8.0 from central in [default]
+	org.slf4j#slf4j-api;2.0.6 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.10.5 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   11  |   0   |   0   |   0   ||   11  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-27d70178-51ea-4f3b-9c06-5ba77f7333e8
+	confs: [default]
+	0 artifacts copied, 11 already retrieved (0kB/176ms)
++--------------------+-------+---+----------+---+-----+-------------+---------+-------------------+
+|              street|bicycle|car|motorcycle|bus|truck|traffic light|stop sign|     execution_time|
++--------------------+-------+---+----------+---+-----+-------------+---------+-------------------+
+|nguyenthaison_pha...|      0|  5|         2|  0|    1|            0|        0|2025-01-29 18:50:04|
+| hoangvanthu_conghoa|      0|  5|         4|  0|    0|            0|        0|2025-01-29 18:50:09|
+|truongchinh_tanki...|      1|  4|        11|  0|    0|            1|        0|2025-01-29 18:50:12|
+|      cmt8_truongson|      0|  6|        12|  0|    0|            0|        0|2025-01-29 18:50:16|
+|nguyenthaison_pha...|      0|  2|        12|  0|    0|            0|        0|2025-01-29 18:50:22|
+| hoangvanthu_conghoa|      0|  7|         3|  0|    0|            0|        0|2025-01-29 18:50:25|
+|truongchinh_tanki...|      0| 12|        12|  0|    0|            0|        0|2025-01-29 18:50:29|
+|      cmt8_truongson|      0|  5|         6|  0|    0|            0|        0|2025-01-29 18:50:35|
+|nguyenthaison_pha...|      0|  7|        24|  0|    0|            0|        0|2025-01-29 18:50:41|
+| hoangvanthu_conghoa|      0| 10|         4|  0|    0|            0|        0|2025-01-29 18:50:47|
+|truongchinh_tanki...|      0|  7|        14|  0|    0|            0|        0|2025-01-29 18:50:53|
+|      cmt8_truongson|      0|  3|        16|  0|    0|            0|        0|2025-01-29 18:51:01|
+|nguyenthaison_pha...|      0|  1|        17|  0|    1|            0|        0|2025-01-29 18:51:07|
+| hoangvanthu_conghoa|      0|  7|        10|  0|    0|            0|        0|2025-01-29 18:51:12|
+|truongchinh_tanki...|      0|  4|        18|  0|    1|            0|        0|2025-01-29 18:51:17|
+|      cmt8_truongson|      0|  2|         8|  0|    0|            0|        0|2025-01-29 18:51:22|
+|nguyenthaison_pha...|      1|  6|        19|  1|    0|            0|        0|2025-01-29 18:51:27|
+| hoangvanthu_conghoa|      0|  4|         6|  0|    1|            0|        0|2025-01-29 18:51:31|
+|truongchinh_tanki...|      0|  1|         5|  0|    0|            2|        0|2025-01-29 18:51:36|
+|      cmt8_truongson|      0|  0|         6|  0|    0|            0|        0|2025-01-29 18:51:40|
++--------------------+-------+---+----------+---+-----+-------------+---------+-------------------+
+only showing top 20 rows
+
+Run Spark Batch Job at Wed Jan 29 19:48:03 +07 2025
+:: loading settings :: url = jar:file:/opt/bitnami/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /opt/bitnami/spark/.ivy2/cache
+The jars for the packages stored in: /opt/bitnami/spark/.ivy2/jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-3c9aeb15-cf14-4e42-9ddf-e2b30f4b0a04;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.4.3 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.4.3 in central
+	found org.apache.kafka#kafka-clients;3.3.2 in central
+	found org.lz4#lz4-java;1.8.0 in central
+	found org.xerial.snappy#snappy-java;1.1.10.5 in central
+	found org.slf4j#slf4j-api;2.0.6 in central
+	found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+	found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+	found commons-logging#commons-logging;1.1.3 in central
+	found com.google.code.findbugs#jsr305;3.0.0 in central
+	found org.apache.commons#commons-pool2;2.11.1 in central
+:: resolution report :: resolve 4508ms :: artifacts dl 56ms
+	:: modules in use:
+	com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+	commons-logging#commons-logging;1.1.3 from central in [default]
+	org.apache.commons#commons-pool2;2.11.1 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+	org.apache.kafka#kafka-clients;3.3.2 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.4.3 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.4.3 from central in [default]
+	org.lz4#lz4-java;1.8.0 from central in [default]
+	org.slf4j#slf4j-api;2.0.6 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.10.5 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   11  |   0   |   0   |   0   ||   11  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-3c9aeb15-cf14-4e42-9ddf-e2b30f4b0a04
+	confs: [default]
+	0 artifacts copied, 11 already retrieved (0kB/76ms)
++--------------------+-------+---+----------+---+-----+-------------+---------+-------------------+
+|              street|bicycle|car|motorcycle|bus|truck|traffic light|stop sign|     execution_time|
++--------------------+-------+---+----------+---+-----+-------------+---------+-------------------+
+|nguyenthaison_pha...|      0|  5|         2|  0|    1|            0|        0|2025-01-29 18:50:04|
+| hoangvanthu_conghoa|      0|  5|         4|  0|    0|            0|        0|2025-01-29 18:50:09|
+|truongchinh_tanki...|      1|  4|        11|  0|    0|            1|        0|2025-01-29 18:50:12|
+|      cmt8_truongson|      0|  6|        12|  0|    0|            0|        0|2025-01-29 18:50:16|
+|nguyenthaison_pha...|      0|  2|        12|  0|    0|            0|        0|2025-01-29 18:50:22|
+| hoangvanthu_conghoa|      0|  7|         3|  0|    0|            0|        0|2025-01-29 18:50:25|
+|truongchinh_tanki...|      0| 12|        12|  0|    0|            0|        0|2025-01-29 18:50:29|
+|      cmt8_truongson|      0|  5|         6|  0|    0|            0|        0|2025-01-29 18:50:35|
+|nguyenthaison_pha...|      0|  7|        24|  0|    0|            0|        0|2025-01-29 18:50:41|
+| hoangvanthu_conghoa|      0| 10|         4|  0|    0|            0|        0|2025-01-29 18:50:47|
+|truongchinh_tanki...|      0|  7|        14|  0|    0|            0|        0|2025-01-29 18:50:53|
+|      cmt8_truongson|      0|  3|        16|  0|    0|            0|        0|2025-01-29 18:51:01|
+|nguyenthaison_pha...|      0|  1|        17|  0|    1|            0|        0|2025-01-29 18:51:07|
+| hoangvanthu_conghoa|      0|  7|        10|  0|    0|            0|        0|2025-01-29 18:51:12|
+|truongchinh_tanki...|      0|  4|        18|  0|    1|            0|        0|2025-01-29 18:51:17|
+|      cmt8_truongson|      0|  2|         8|  0|    0|            0|        0|2025-01-29 18:51:22|
+|nguyenthaison_pha...|      1|  6|        19|  1|    0|            0|        0|2025-01-29 18:51:27|
+| hoangvanthu_conghoa|      0|  4|         6|  0|    1|            0|        0|2025-01-29 18:51:31|
+|truongchinh_tanki...|      0|  1|         5|  0|    0|            2|        0|2025-01-29 18:51:36|
+|      cmt8_truongson|      0|  0|         6|  0|    0|            0|        0|2025-01-29 18:51:40|
++--------------------+-------+---+----------+---+-----+-------------+---------+-------------------+
+only showing top 20 rows
+
