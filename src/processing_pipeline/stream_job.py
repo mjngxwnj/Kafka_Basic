@@ -43,6 +43,9 @@ def process_kafka_traffic_data(spark: SparkSession,
     #generate traffic features
     traffic_df = generate_traffic_features(traffic_df)
 
+    #add execution hour
+    traffic_df = traffic_df.withColumn("execution_hour", hour("execution_time")) \
+
     #write to cassandra
     traffic_query = traffic_df.writeStream \
                               .format("org.apache.spark.sql.cassandra") \
@@ -50,7 +53,6 @@ def process_kafka_traffic_data(spark: SparkSession,
                               .option("table", "stream_traffic_table") \
                               .option("checkpointLocation", "checkpoints_traffic") \
                               .start()
-              
     return traffic_query
     
 
@@ -90,6 +92,9 @@ def process_kakfa_weather_data(spark: SparkSession,
     
     #generate weather features
     weather_df = generate_weather_features(weather_df)
+
+    #add execution hour
+    weather_df = weather_df.withColumn("execution_hour", hour("execution_time")) \
 
     #write to cassandra
     weather_query = weather_df.writeStream \

@@ -2,7 +2,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql import DataFrame
 from pyspark.sql.types import (StructType, StructField, StringType, 
                                IntegerType, TimestampType, FloatType)
-from pyspark.sql.functions import from_json, col, when, exp, pow
+from pyspark.sql.functions import from_json, col, when, exp, pow, date_format
 from contextlib import contextmanager
 
 
@@ -193,105 +193,3 @@ def generate_weather_features(weather_df: DataFrame) -> DataFrame:
     weather_df = weather_df.withColumn("heat_index", (col("heat_index") - 32) / 1.8)
     
     return weather_df
-
-def load_to_HDFS(df: DataFrame, HDFS_dir: str):
-    """
-    Args:
-        df: Spark DataFrame
-        path: HDFS path to save the data
-    """
-    
-    HDFS_PATH = f"hdfs://namenode:9000/{HDFS_dir}"
-
-    #check params
-    if not isinstance(df, DataFrame):
-        raise ValueError("df should be a Spark DataFrame")
-
-    #save data to HDFS
-    df.write.format("parquet").mode("append").save(HDFS_PATH)
-
-        
-    
-
-
-
-
-
-
-# """ Function for reading Kafka data in batch mode"""
-# def read_Kafka_batch_data(spark: SparkSession, 
-#                           topic: str, 
-#                           kafka_server: str = "kafka1:19092") -> spark.sql.DataFrame:
-#     """
-#     Args:
-#         spark: SparkSession object
-#         kafka_server: kafka server url
-#         topic: kafka topic
-#     """
-
-#     #check params
-#     if not isinstance(spark, SparkSession):
-#         raise ValueError("spark should be a SparkSession object")
-    
-#     df = spark.read \
-#               .format("kafka") \
-#               .option("kafka.bootstrap.servers", kafka_server) \
-#               .option("subscribe", topic) \
-#               .option("startingOffsets", "earliest") \
-#               .load()
-    
-#     df = df.selectExpr("CAST(value AS STRING) as message")
-#     df = df.withColumn("value", from_json("message", get_schema("traffic")))
-#     df = df.select("value.*")
-#     return df
-
-
-# """ Function for reading Kafka data in streaming mode"""
-# def read_Kafka_streaming_data(spark: SparkSession, topic: str, kafka_server: str = "kafka1:19092"):
-#     """
-#     Args:
-#         spark: SparkSession object
-#         kafka_server: kafka server url
-#         topic: kafka topic
-#     """
-
-#     #check params
-#     if not isinstance(spark, SparkSession):
-#         raise ValueError("spark should be a SparkSession object")
-    
-#     df = spark.readStream \
-#               .format("kafka") \
-#               .option("kafka.bootstrap.servers", kafka_server) \
-#               .option("subscribe", topic) \
-#               .option("startingOffsets", "earliest") \
-#               .load()
-    
-#     df = df.selectExpr("CAST(value AS STRING) as message")
-#     df = df.withColumn("value", from_json("message", get_schema("traffic")))
-#     df = df.select("value.*")
-
-#     query = df.writeStream \
-#           .outputMode("append") \
-#           .format("console") \
-#           .start()
-
-#     query.awaitTermination()
-
-
-
-
-
-    #add time features
-    # df = df.withColumn("part_of_day", \
-    #                     when((hour(df['execution_time']).between(0, 5)), "night"). \
-    #                     when((hour(df['execution_time']).between(6, 11)), "morning"). \
-    #                     when((hour(df['execution_time']).between(12, 17)), "afternoon"). \
-    #                     otherwise("evening"))
-    
-    # df = df.withColumn("day_of_week", date_format(df['execution_time'], "EEEE")) \
-    # #add time features
-    # df = df.withColumn("day_of_week", date_format(df['execution_time'], "EEEE")) \
-    #        .withColumn("day", dayofmonth(df['execution_time'])) \
-    #        .withColumn("month", month(df['execution_time'])) \
-    #        .withColumn("year", year(df['execution_time'])) \
-    #        .withColumn("time_of_day", date_format(df['execution_time'], "HH:mm:ss"))
